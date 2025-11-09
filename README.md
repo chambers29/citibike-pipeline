@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/citibike.png" alt="Project Banner" width="800"/>
+  <img src="images/citibike_banner.png" alt="Project Banner" width="1000"/>
 </p>
 
 # CITI-BIKE TRIPDATA PIPELINE
