@@ -2,8 +2,9 @@
   <img src="images/citibike_banner.png" alt="Project Banner" width="1000"/>
 </p>
 
-## Summary
 ---
+
+## Summary
 This pipeline is designed to ingest, transform, and standardize all publicly available Citi Bike trip data.
 >Data source: https://s3.amazonaws.com/tripdata/index.html
 
@@ -13,8 +14,8 @@ The **gold_pipeline** then processes this standardized data to produce insights.
 
 The entire solution was built and tested on **Databricks** platform.
 
-## Structure
 ---
+## Structure
 - [data_ingestion/](data_ingestion/) - downloading and extracting raw data to bronze storage
   - [01_zip_download](01_zip_download.ipynb) - downloads monthly ZIP archives from the source
   - [02_zip_extraction](02_zip_extraction.ipynb) - extracts CSV files and prepares raw data
@@ -25,8 +26,8 @@ The entire solution was built and tested on **Databricks** platform.
 - [exploration/](exploration/) - notebooks used to explore processed data
 - [test/](test/) - testing before main apply
 
-## Technologies
 ---
+## Technologies
 ***Databricks*** – platform used to build and run the project
 
 ***Apache Spark (PySpark)*** – engine for processing and transforming big data
@@ -37,8 +38,8 @@ The entire solution was built and tested on **Databricks** platform.
 
 ***Python*** – main programming language used in the pipeline
 
-## Run explanation
 ---
+## Run explanation
 The pipeline runs in ***Databricks Jobs*** as a series of connected tasks:
 
 *01_zip_download* → *02_zip_extraction* → *silver_pipeline* → *gold_pipeline*
@@ -58,8 +59,8 @@ The pipeline runs in ***Databricks Jobs*** as a series of connected tasks:
 
 > - *years* – select which years to process
 
-## How to run
 ---
+## How to run
 1. Clone the repo into Databricks Repos.
 2. Change storage paths to yours.
 3. Run notebooks in the following order:
