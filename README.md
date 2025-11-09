@@ -17,12 +17,12 @@ The entire solution was built and tested on **Databricks** platform.
 ---
 ## Structure
 - [data_ingestion/](data_ingestion/) - downloading and extracting raw data to bronze storage
-  - [01_zip_download](01_zip_download.ipynb) - downloads monthly ZIP archives from the source
-  - [02_zip_extraction](02_zip_extraction.ipynb) - extracts CSV files and prepares raw data
+  - [01_zip_download](data_ingestion/01_zip_download.ipynb) - downloads monthly ZIP archives from the source
+  - [02_zip_extraction](data_ingestion/02_zip_extraction.ipynb) - extracts CSV files and prepares raw data
 - [data_transformation/](data_transformation/) - main transformation logic for Silver and Gold layers
-  - [silver_pipeline](silver_pipeline.ipynb) - standardizes schemas and cleans datasets
-  - [gold_pipeline](gold_pipeline.ipynb) - aggregates and generates analytical outputs
-  - [gold_utils](gold_utils.ipynb) - functions used by Gold transformations
+  - [silver_pipeline](data_transformation/silver_pipeline.ipynb) - standardizes schemas and cleans datasets
+  - [gold_pipeline](data_transformation/gold_pipeline.ipynb) - aggregates and generates analytical outputs
+  - [gold_utils](data_transformation/gold_utils.ipynb) - functions used by Gold transformations
 - [exploration/](exploration/) - notebooks used to explore processed data
 - [test/](test/) - testing before main apply
 
