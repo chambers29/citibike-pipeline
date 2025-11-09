@@ -56,6 +56,18 @@ The pipeline runs in ***Databricks Jobs*** as a series of connected tasks:
 
 > - *years* – select which years to process
 
+## How to run
+---
+1. Clone the repo into Databricks Repos.
+2. Change storage paths to yours.
+3. Run notebooks in the following order:
+   - *01_zip_download*
+   - *02_zip_extraction*
+   - *silver_pipeline*
+   - *gold_pipeline*
+4. Optionally, create a Databricks Job to automate the full pipeline.
+
+
 
 
 
