@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/citibike.png" alt="Project Banner" width="800"/>
+</p>
+
 # CITI-BIKE TRIPDATA PIPELINE
 
 ## Summary
