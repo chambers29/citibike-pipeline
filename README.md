@@ -2,8 +2,6 @@
   <img src="images/citibike_banner.png" alt="Project Banner" width="1000"/>
 </p>
 
-# CITI-BIKE TRIPDATA PIPELINE
-
 ## Summary
 ---
 This pipeline is designed to ingest, transform, and standardize all publicly available Citi Bike trip data.
